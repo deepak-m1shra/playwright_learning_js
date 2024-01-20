@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "logintest" : "playwright test tests/logintest.spec.ts --headed --project=Chromium"
+    "logintest" : "playwright test tests/logintest.spec.ts --headed --project=Chromium",
+    "apitest" : "playwright test tests/api/simple_api.spec.ts"
   },
   "keywords": [],
   "author": "",
