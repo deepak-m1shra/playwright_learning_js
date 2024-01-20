@@ -1,4 +1,5 @@
 import {test, expect} from '@playwright/test'
+import { describe } from 'node:test'
 
 test('Google title test', async ({page}) => {
     await page.goto('https://www.google.com')
@@ -140,4 +141,8 @@ test.describe.skip('Grouping and hooking', () => {
         console.log('executed after each test case')
     //    await page.reload()
     })
+})
+
+test.describe.parallel(() => {
+    console.log('Used for executing parallel tests')
 })
